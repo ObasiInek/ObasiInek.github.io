@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Inek Obası</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, viewport-fit=cover">
+
+    <script src="https://kit.fontawesome.com/e51de850ab.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="Image/InekObasiFavIconWhite.ico"/>
+
+</head>
+
+<style>
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+    .header {
+        text-align: center;
+        background: #dd2118;
+        color: white;
+        font-size: 20px;
+        height: 12vh;
+        width: auto;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+    }
+    .HeaderImage {
+        width: 13.8%;
+        position:relative;
+        bottom: 50px;
+        right: 30%;
+    }
+
+    @media only screen and (max-width: 1026px) {
+        #fadeshow1 {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 1026px) {
+        #textAlign {
+            top: 10px;
+        }
+    }
+    .center{
+        margin: 0 auto;
+    }
+    .vertical-center {
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .btn-group{
+        z-index: 1;
+        position: relative;
+        top: 40%;
+        font-size: 100%;
+        text-align: center;
+    }
+    #GFG{
+        text-decoration: none;
+    }
+    .btn-group .ButtonText{
+        padding: 1vw;
+    }
+
+    .ButtonText:hover{
+        color: rgb(180, 169, 169);
+    }
+
+    .tFlinks{
+        justify-content: flex-start;
+    }
+
+    @media only screen and (max-aspect-ratio: 3/4){
+        .ButtonText{
+            font-size: 3vw;
+        }
+        .tFlinks{
+            justify-content: space-evenly;
+        }
+    }
+    .btn-group .buttonHeader {
+        background-color: #dd2118; 
+        border: 2px solid #aa1b13;
+        border-radius: 4px;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    .buttonHeader:hover {
+        background-color: #aa1b13;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .buttonHeader:active {
+        background-color: #aa1b13;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content .Titlecontents{
+        color: white;
+        background-color: #dd2118;
+        border: 1px solid #aa1b13;
+        border-radius: 1px;
+    }
+    .Titlecontents:hover{
+        background-color: #aa1b13;
+    }
+    .Titlecontents:active{
+        background-color: #aa1b13;
+        box-shadow: 0 1px #666;
+        transform: translateY(-1px);
+    }
+    .HeaderContainer{
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+    }
+
+    .backgroundFrame{
+        display: flex;
+        width: 100vw;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        padding: 0;
+    }
+    
+    .mainFrame{
+        width: 65vw;
+        margin: 0;
+        margin-left: 3%;
+        margin-right: auto;
+        padding: 0;
+        box-shadow: 0px 0px 10px 5px rgb(197, 197, 197);
+    }
+    
+    .videoFrame{
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        height: 65vh;
+        margin-top: 1%;
+        border:none;
+        box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.432);
+    }
+
+    .radioFrame{
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        height: 10vh;
+        margin-top: 1%;
+        box-shadow: 0px 0px 10px 5px #ca1f16;
+    }
+
+    .gundemFrame{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;      
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        height: 60vh;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        box-shadow: 0px 0px 10px 5px #ca1f16;
+    }
+
+    .gundem{
+        width: 47%;
+        height: 95%;
+        margin-top: 1%;
+        margin-bottom: 1%; 
+        box-shadow: 0px 0px 10px 5px #ca1f16;
+    }
+
+    .rightFrame{
+        width: 20vw;
+        height: fit-content;
+        margin: 0;
+        margin-right: 7%;
+        margin-left: auto;
+        padding: 0;
+        box-shadow: 0px 0px 10px 5px rgb(197, 197, 197);
+    }
+
+    .rightFrame .videoBroadcast{
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        height: 65vh;
+        margin-top: 2.5%; 
+    }
+
+    .rightFrame .radioBroadcast{
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        height: 42vh;
+        margin-top: 2.5%; 
+        margin-bottom: 2.5%;
+    }
+
+    .footer{
+        margin: 0;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100vw;
+        height: 30vh;
+        box-shadow: 0px -3px 10px 5px rgb(197, 197, 197);
+    }
+</style>
+
+<body style="height: 100%; width: 100%; margin: 0 auto;">
+    <div class="HeaderContainer">   
+
+        <div class="header">
+            <div class="btn-group" id="#textAlign">
+                <div class="dropdown">
+                    <a id="GFG" class="dropbtn ButtonText" style="z-index: 1;">INEK OBASI</a>
+                        <div class="dropdown-content">
+                            <a href="http://InekObasi.tk/" class="Titlecontents">Ana Sayfa</a>
+                            <a  class="Titlecontents" href="http://InekObasi.tk/hakkinda">Hakkımızda</a>
+                            <a class="Titlecontents" href="http://InekObasi.tk/iletisim">Iletişim</a>
+                        </div>
+                </div>
+
+                <a id="GFG" class="ButtonText" href="http://InekObasi.tk/haberler"style="z-index: 1;">HABERLER</a>
+                <a id="GFG" class="ButtonText" href="http://InekObasi.tk/yayinlar"style="z-index: 1;">CANLI YAYIN</a>
+                <a id="GFG" class="ButtonText" href="http://InekObasi.tk/projeler"style="z-index: 1;">PROJELER</a>
+            </div>
+
+            <a href="http://InekObasi.tk">
+                <img class="HeaderImage" id="fadeshow1" src="Image/InekObasıHeader.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="backgroundFrame">
+        <div class="mainFrame" style="background-color: #dd2118;">
+            <div style="text-align:center">
+                <iframe class="videoFrame" src="https://www.youtube-nocookie.com/embed/puYNj-x6oUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="radioFrame" style="background-color: #c91f16;">    
+                <div data-video="fCbAafKLqC8"  data-autoplay="0" data-loop="0" id="youtube-audio1"></div>
+            </div>
+            <div class="gundemFrame" style="background-color: #c91f16;">
+                <div class="gundem" style="border: #f9f9f9 solid 1px;">img</div>
+                <div class="gundem" style="border: #f9f9f9 solid 1px;">img</div>
+            </div>
+        </div>
+
+        <div class="rightFrame" style="background-color: #dd2118;">
+            <div class="videoBroadcast"></div>
+            <div class="radioBroadcast"></div>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color: #1a1a1a;">
+
+    </div>
+
+    <script id="radioScript">
+        // TUTORIAL ----  http://www.labnol.org/internet/youtube-audio-player/26740/  
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player1;
+        function onYouTubeIframeAPIReady() {
+            var ctrlq1 = document.getElementById("youtube-audio1");
+            ctrlq1.innerHTML = '<img id="youtube-icon1" src=""/><div id="youtube-player1"></div>';
+            ctrlq1.style.cssText = 'margin:auto; width:10%;cursor:pointer;cursor:hand; display:none; margin-top:0';
+            ctrlq1.onclick = toggleAudio1;
+
+            player1 = new YT.Player('youtube-player1', {
+            height: '0',
+            width: '0',
+            videoId: ctrlq1.dataset.video,
+            playerVars: {
+                autoplay: ctrlq1.dataset.autoplay,
+                loop: ctrlq1.dataset.loop,
+            },
+            events: {
+                'onReady': onPlayerReady1,
+                'onStateChange': onPlayerStateChange1 
+            } 
+            });
+        } 
+
+        function togglePlayButton1(play) {    
+            document.getElementById("youtube-icon1").src = play ? "stop.png" : "play.jpg";
+            aspectRatio = window.screen.availWidth/window.screen.availHeight
+            console.log(aspectRatio)
+            if (aspectRatio>=1){
+                document.getElementById("youtube-icon1").style = "max-width:5vw;height:9vh;margin-left:auto;margin-rigth:auto;margin-top:4%";
+            }else{
+                document.getElementById("youtube-icon1").style = "max-width:8vw;height:8vh;margin-left:auto;margin-rigth:auto;margin-top:15%;";
+            }
+        }
+
+        function toggleAudio1() {
+            if ( player1.getPlayerState() == 1 || player1.getPlayerState() == 3 ) {
+            player1.pauseVideo(); 
+            togglePlayButton1(false);
+            } else {
+            player1.playVideo(); 
+            togglePlayButton1(true);
+            } 
+        } 
+
+
+        function onPlayerReady1(event) {
+            player1.setPlaybackQuality("small");
+            document.getElementById("youtube-audio1").style.display = "block";
+            togglePlayButton1(player1.getPlayerState() !== 5);
+        }
+
+        function onPlayerStateChange1(event) {
+            if (event.data === 0) {
+            togglePlayButton1(false); 
+            }
+        }
+    </script>
+</body>
+
+</html>
