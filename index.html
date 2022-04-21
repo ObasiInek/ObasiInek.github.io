@@ -172,6 +172,66 @@
         box-shadow: 0 1px #666;
         transform: translateY(-1px);
     }
+    .mySlides {
+        display:none;
+        width: 100%;
+        height: auto;
+        border: 2px solid black;
+
+    }
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+    .HeaderContainer{
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+    }
+
+    .GündemContainer{
+        position: relative;
+        width:100vw;
+        height: 90%;
+        font-size: 150%;
+    }
+    .GündemText{
+        color: black;
+        position: relative;
+        left: 18%;
+    }
+
+    .GündemFotoContainer{
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        width: 75%; 
+        height: 100%;
+    }
+
+    .GündemFoto{
+        border: 1px solid black;
+        position: relative;
+        flex-wrap: wrap;
+        width: 45%;
+        margin-bottom: 4px;
+        margin-left: 3%;
+        margin-right: auto;
+    }
+
+    .TopFooterContainer{
+        display: block;
+        background-color: rgb(78, 78, 78);
+        width: 100%;
+        height: fit-content;
+        bottom: 0px;
+    }
+
+    .TopFooterContainer .TopFooterIcons{
+        position: relative;
+        font-size: 2vw;
+        color:white;
+        padding:4px;
+    }
+
     .Footer{
         z-index: 1;
         position: fixed;
@@ -194,75 +254,10 @@
         left: 10px;
         top: 40px;
     }
-    .mySlides {
-        display:none;
-        width: 100%;
-        height: auto;
-        border: 2px solid black;
-
-    }
-    .w3-left, .w3-right, .w3-badge {cursor:pointer}
-    .w3-badge {height:13px;width:13px;padding:0}
-    .HeaderContainer{
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-    }
-    .SliderContainer{
-    }
-    .GündemContainer{
-        position: relative;
-        width: inherit;
-        height: 90%;
-        font-size: 150%;
-    }
-    .GündemText{
-        color: black;
-        position: relative;
-        left: 18%;
-    }
-    .GündemFotoContainer{
-        width: 100%; 
-        height: 100%;
-    }
-    .GündemFoto{
-        border: 1px solid black;
-        position: relative;
-        left: 14%;
-        display: inline-block;
-        width: 30%;
-        margin-bottom: 4px;
-        margin-left: 4%;
-    }
-    .TopFooterContainer{
-        display: block;
-        background-color: rgb(78, 78, 78);
-        width: 100%;
-        height: 270px;
-        bottom: 0px;
-    }
-
-    .TopFooterContainer2{
-        position: relative;
-        text-align: center;
-        bottom: 0px;
-
-        top: 10%;
-        left: 42.2%;
-        width: 16%;
-        height: 100%;
-    }
-
-    .TopFooterContainer .TopFooterIcons{
-        position: relative;
-        font-size: 325%;
-        color:white;
-        padding:4px;
-    }
 
 </style>
 
-<body style="height: 100%; width: 100%; margin: 0 auto;">
+<body style="min-height: 100%; width: 100%; margin: 0 auto;margin-bottom: 50px;">
     <div class="HeaderContainer">   
         <div class="AtatürkSöz">
             <img src="Image/KemalAtatürkImza.png" class="AtatürkImza"> 
@@ -294,9 +289,7 @@
         </div>
     </div>
 
-    <div class="Footer">
-            <img class="FooterLogo" src="Image/InekObasiLogo.jpg"><img>
-    </div>
+
  
     <div class="SliderContainer">
         <div class="w3-content w3-section w3-display-container slider" style="width: 100%;">
@@ -369,7 +362,7 @@
                 <img src="Image/CemaatYurtlarıKapatılsın.png" class="GündemFoto">
                 <img src="Image/ÜyeAranıyor.png" class="GündemFoto">
                 <img src="Image/ÜyeAranıyorYeşilOba.png" class="GündemFoto">
-                <img src="Image/ZübeydeHanım.png" class="GündemFoto">
+                <img src="Image/ÜyeAranıyorYeşilOba.png" class="GündemFoto">
             </a>
         </div>
 
@@ -377,12 +370,12 @@
 
     <div class="TopFooterContainer">
             <div style="display: flex; justify-content: center;">
-                <img src="Image/InekObasıLogoName.jpg" class="TopFooterLogo" style="width: 150px; padding-top:4px; padding-left:4px;">
+                <img src="Image/InekObasıLogoName.jpg" class="TopFooterLogo" style="width: 10vw; padding-top:4px; padding-left:4px;">
                 <!--<img src="Image/YeşilObasLogoName.png" class="TopFooterLogo" style="width: 150px; padding-top:4px; padding-left: 4px;">-->
                 
             </div>
             <div style="display: flex; justify-content: center;">
-                <p style="color: white;">©2021 copyright all rights reserved</p>
+                <p style="color: white;font-size: .75vw;">©2021 copyright all rights reserved</p>
             </div>
             <div style="display: flex; justify-content: center;">
                 <a href="https://twitter.com/ObasiInek" target="_blank">
@@ -396,7 +389,7 @@
                 </a>
             </div>
 
-            <div class="tFlinks" style="display: flex; gap: 10px;">
+            <div class="tFlinks" style="display: flex; gap: 10px;font-size: 1vw;">
                 <a href="http://inekobasi.tk/iftarakalan" style="color: rgb(102, 102, 102);" target="_blank">
                     <div>Iftara Kalan Vakit</div>
                 </a>
@@ -406,6 +399,11 @@
             </div>
         </div>
     </div>
+
+    <div class="Footer">
+        <img class="FooterLogo" src="Image/InekObasiLogo.jpg"><img>
+    </div>
+    
 </body>
 
 </html>
