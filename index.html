@@ -19,7 +19,7 @@
     * {box-sizing: border-box}
 
     .body{
-        min-height: 100%; width: 100%; margin: 0 auto;margin-bottom: 50px;
+        min-height: 100%; width: 100%; margin: 0 auto;margin-bottom: 50px;background-color: #9b140d;
     }
 
     .AtatürkSöz{
@@ -29,8 +29,7 @@
         font-size: 100%;
         height: 50%;
         width: auto;
-    }
-    
+    }    
     .AtatürkSöz_Text{
         text-align: center;
         vertical-align: sub;
@@ -38,13 +37,11 @@
         margin: 0 auto;
         text-transform: capitalize;
     }
-
     .AtatürkImza{
         filter: invert(100%); 
         position: relative; 
         width: 5%;
     }
-   
     .header {
         text-align: center;
         background: #dd2118;
@@ -54,23 +51,18 @@
         width: auto;
         box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
-    }
-    
+    }  
     .HeaderImage {
         width: 13.8%;
         position:relative;
         bottom: 50px;
         right: 30%;
     }
-
-
-
     @media only screen and (max-width: 1026px) {
         #textAlign {
             top: 10px;
         }
     }
-
     .center{
         margin: 0 auto;
     }
@@ -88,29 +80,20 @@
         font-size: 100%;
         text-align: center;
     }
-
     #GFG{
         text-decoration: none;
     }
-
     .btn-group .ButtonText{
         padding: 1vw;
     }
-
     .ButtonText:hover{
         color: rgb(180, 169, 169);
     }
-
-    .tFlinks{
-        justify-content: flex-start;
-    }
-
     @media only screen and (max-aspect-ratio: 3/4){
         .ButtonText{
             font-size: 3vw;
         }
     }
-
     .btn-group .buttonHeader {
         background-color: #dd2118; 
         border: 2px solid #aa1b13;
@@ -169,100 +152,147 @@
         box-shadow: 0 1px #666;
         transform: translateY(-1px);
     }
-    .mySlides {
-        display:none;
+
+    .sliderFrame{
         width: 100%;
-        height: auto;
-        border: 2px solid black;
-
+        height: 10%;
     }
-    .w3-left, .w3-right, .w3-badge {cursor:pointer}
-    .w3-badge {height:13px;width:13px;padding:0}
-    .HeaderContainer{
+
+    .slideIMG{
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0px 3px 10px 3px #85110b;
+    }
+
+    .aboutFrame{
+        margin: 0;
         width: 100%;
-        height: 100%;
-    }
-
-    .GündemContainer{
-        position: relative;
-        width:100vw;
-        height:100%;
-        font-size: 150%;
-    }
-    .GündemText{
-        color: black;
-        position: relative;
-        left: 18%;
-        font-size: 1.5vw;
-    }
-
-    .GündemFotoContainer{
-        justify-content: center;
+        height: 50%;
         display: flex;
-        margin: auto;
-        width: 75%; 
-        height: 100%;
+        flex-wrap:wrap-reverse;
+        justify-content: space-evenly;
+        background-color: #9b140d;
+        aspect-ratio: 2;
+        margin-bottom: 1%;
     }
 
-    .GündemFoto{
-        border: 1px solid black;
-        position: relative;
-        flex-wrap: wrap;
+    .halfaDiv{
         width: 45%;
-        margin-bottom: 4px;
-        margin-left: 3%;
-        margin-right: auto;
+        height: 100%;    
     }
 
-    @media only screen and (max-aspect-ratio: 3/4){
-        .GündemFotoContainer{
-            width: 100%; 
-        }
-        .GündemFoto{
-            width: 45%;
-        }
-        .GündemText{
-            font-size: 5vw;
-            left: 10%;
-        }
+    .aboutFrameRight{
+        background-color: #c01e16; 
+        border: 2px solid #c01e16; 
+        border-radius: 50px 20px; 
+        margin-top: 1%;         
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
-    .TopFooterContainer{
-        display: block;
-        background-color: rgb(78, 78, 78);
+    .aboutTitle{
         width: 100%;
-        height: fit-content;
-        bottom: 0px;
-    }
-
-    .TopFooterIcons{
-        position: relative;
-        font-size: 2vw;
-        color:white;
-        padding:4px;
-    }
-
-    .tfCprght{
+        font-size: 2.5vw;
+        text-align: center;
         color: white;
-        font-size: .75vw;
+        text-decoration: underline;
+    }
+
+    .aboutText_InnerFrame{
+        width: 90%; 
+        height: 70%; 
+        background-color: #b11c14; 
+        margin-left: auto; 
+        margin-right: auto;
+        border: 2px solid #b11c14; 
+        border-radius: 50px 20px; 
+    }
+
+    .aboutText{
+        width: 100%;
+        height:fit-content;
+        color: white;
+        font-size: 2vw;
+        word-wrap:break-word;
+        text-indent: 50px;
+        text-align: center;
+        text-align-last: center;
+        line-height: 100%;
+        letter-spacing: 3px;
+        margin-top: 5%;
+    }
+
+    .aboutImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        max-height: auto;
+        object-fit: scale-down;
+    }
+
+    .gundemFrame{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap:wrap-reverse;
+        justify-content: space-evenly;
+        background-color: #9b140d;
+    }
+
+    .gundemIMG{
+        object-fit: fill; 
+        width: auto; 
+        max-width: 100%;
+        border-radius: 5px 5px 5px 5px;
+        border: 2px solid #c01e16; 
+    }
+
+    .gundemIMG:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
+    }
+
+    .tfFrame{
+        width: 100%;
+        height: 60%;
+        background-color: #1a1a1a;
+        text-align: center;
+        padding-top: 1px;
+    }
+
+    .tfTopFrame{
+        width: 100%;
+        height: 30%;
+        margin-top: 1%;
+    }
+    .tfIMG{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .tfMidFrame{
+        width: 100%;
+        height: 20%;
+        margin-top: 1%;
+        font-size: 100%;
+        color: white;    
+        letter-spacing: 3px;
+    }
+
+    .tfBottomFrame{
+        width: 100%;
+        height: 20%;
+        margin-top: 1%;
     }
 
     @media only screen and (max-aspect-ratio: 3/4){
-       .TopFooterIcons{
-            font-size: 5vw;
-        }
-        .tfCprght{
-            font-size: 2vw;
-        }
-        .tFlinks{
-            font-size: 3vw;
-            justify-content: space-evenly;
-        }
         .body{
             margin-bottom: 54px;
         }
+        .HeaderImage{
+            display: none;
+        }
     }
-
     .Footer{
         z-index: 1;
         position: fixed;
@@ -296,8 +326,6 @@
             <p class="AtatürkSöz_Text">-Mustafa Kemal ATATÜRK</p>
         </div>
         <div class="header">
-
-
             <div class="btn-group" id="#textAlign">
                 <div class="dropdown">
                     <a id="GFG" class="dropbtn ButtonText" style="z-index: 1;">INEK OBASI</a>
@@ -312,99 +340,78 @@
                 <a id="GFG" class="ButtonText" href="http://InekObasi.tk/yayinlar"style="z-index: 1;">CANLI YAYIN</a>
                 <a id="GFG" class="ButtonText" href="http://InekObasi.tk/projeler"style="z-index: 1;">PROJELER</a>
             </div>
-
             <a href="http://InekObasi.tk">
                 <img class="HeaderImage" id="fadeshow1" src="Image/InekObasıHeader.png">
             </a>
-
         </div>
     </div>
 
+    <div class="sliderFrame">
 
- 
-    <div class="SliderContainer">
-        <div class="w3-content w3-section w3-display-container slider" style="width: 100%;">
-            <a href="http://InekObasi.tk/haberler">
-                <img class="mySlides w3-animate-right" src="Image/CemaatYurtlarıKapatılsın.png" >
-                <img class="mySlides w3-animate-right" src="Image/Kazakistan.png">
-                <img class="mySlides w3-animate-right" src="Image/ÜyeAranıyor.png" >
-                <img class="mySlides w3-animate-right" src="Image/ÜyeAranıyorYeşilOba.png" >
-            </a>
+        <img class="slideIMG w3-animate-right" src="Image/CemaatYurtlarıKapatılsın.png" style="width:100%">
+        <img class="slideIMG w3-animate-right" src="Image/KidCat.png" style="width:100%">
+        <img class="slideIMG w3-animate-right" src="Image/ÇocukMutlu.png" style="width:100%">
 
-            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-            <div class="w3-left w3-hover-text-khaki SliderButtons"  onclick="plusDivs(-1)">&#10094;</div>
-            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-        </div>  
         <script>
             var myIndex = 0;
             carousel();
-
+            
             function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 5000);    
+                var i;
+                var x = document.getElementsByClassName("slideIMG");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Change image every 2 seconds
             }
         </script>
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-            showDivs(slideIndex += n);
-            }
-            
-            function currentDiv(n) {
-            showDivs(slideIndex = n);
-            }
-            
-            function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " w3-white";
-        }
-        </script>
-        </div>
-    </div>
-
-    <div class="GündemContainer">
-        <b class="GündemText" id="fadeshow1">Gündem</b>
-        <div class="GündemFotoContainer">
-            <a href="http://InekObasi.tk/haberler">
-                <img src="Image/CemaatYurtlarıKapatılsın.png" class="GündemFoto">
-                <img src="Image/ÜyeAranıyor.png" class="GündemFoto">
-                <img src="Image/ÜyeAranıyorYeşilOba.png" class="GündemFoto">
-                <img src="Image/ÜyeAranıyorYeşilOba.png" class="GündemFoto">
-            </a>
-        </div>
 
     </div>
 
-    <div class="TopFooterContainer">
-            <div style="display: flex; justify-content: center;">
-                <img src="Image/InekObasıLogoName.jpg" class="TopFooterLogo" style="width: 10vw; padding-top:4px; padding-left:4px;">
-                <!--<img src="Image/YeşilObasLogoName.png" class="TopFooterLogo" style="width: 150px; padding-top:4px; padding-left: 4px;">-->
-                
+    <div class="aboutFrame">
+            <div class="halfaDiv aboutFrameRight" id="left">
+                <div class="aboutTitle" id="left">
+                    <p>HAKKIMIZDA</p>
+                </div>
+
+                <div class="aboutText" id="left">
+                    <div class="aboutText">Inek Obası Tüm Dünyada ki Türk Halkına Yardım için Kurulmuş,</div>
+                    <div class="aboutText">Atatürk'ün İlkelerini Benimsemiş Bir Kuruluştur.</div>
+                </div>
+
+                <!--<div class="aboutText_InnerFrame">
+
+                </div>-->
             </div>
+            <div class="halfaDiv" id="right" style="display: flex; justify-content: center;">
+                <img class="aboutImg" src="Image/InekObasıLogoNoBackground.png">
+            </div>
+    </div>
+
+    <div class="gundemFrame">
+        <div class="halfaDiv" style="display: flex; justify-content: center; margin-top: 1%;">
+            <img class="aboutImg gundemIMG" src="Image/ÜyeAranıyor.png" style="margin-bottom: 1%;">
+        </div>
+        <div class="halfaDiv" style="display: flex; justify-content: center; margin-top: 1%;">
+            <img class="aboutImg gundemIMG"src="Image/ÜyeAranıyor.png" style="margin-bottom: 1%;">
+        </div>
+        <div class="halfaDiv" style="display: flex; justify-content: center; margin-top: 1%;">
+            <img class="aboutImg gundemIMG" src="Image/ÜyeAranıyor.png">
+        </div>
+        <div class="halfaDiv" style="display: flex; justify-content: center; margin-top: 1%;">
+            <img class="aboutImg gundemIMG"src="Image/ÜyeAranıyor.png">
+        </div>
+    </div>
+
+    <div class="tfFrame">
+        <div class="tfTopFrame">
+            <img class="tfIMG"src="Image/InekObasıHeader.png">
+        </div>
+
+        <div class="tfMidFrame">
             <div style="display: flex; justify-content: center;">
                 <p class="tfCprght">©2021 copyright all rights reserved</p>
             </div>
@@ -419,17 +426,14 @@
                     <i class="fab fa-instagram TopFooterIcons"></i>
                 </a>
             </div>
+        </div>
 
-            <div class="tFlinks" style="display: flex; gap: 10px;">
-                <a href="http://inekobasi.tk/iftarakalan" style="color: rgb(102, 102, 102);" target="_blank">
-                    <div>Iftara Kalan Vakit</div>
-                </a>
-                <a href="http://inekobasi.tk/2023secimleri" style="color: rgb(102, 102, 102);" target="_blank">
-                    <div>Seçimlere Kalan Vakit</div>
-                </a>
-            </div>
+        <div class="tfBottomFrame">
+            <a href="http://inekobasi.tk/iftarakalan" style="color: rgb(102, 102, 102);" target="_blank">Iftara Kalan Vakit</a>
+            <a href="http://inekobasi.tk/2023secimleri" style="color: rgb(102, 102, 102);" target="_blank">Seçimlere Kalan Vakit</a>
         </div>
     </div>
+
 
     <div class="Footer">
         <img class="FooterLogo" src="Image/InekObasiLogo.jpg"><img>
