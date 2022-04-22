@@ -260,10 +260,19 @@
     }
 
     .tfTopFrame{
-        width: 100%;
-        height: 30%;
+        max-width: 15%;
+        max-height: 10%;
         margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    @media only screen and (max-aspect-ratio: 3/4){
+        .tfTopFrame{
+            max-width: 25%;
+        }
+    }s
+
     .tfIMG{
         max-width: 100%;
         max-height: 100%;
@@ -414,7 +423,7 @@
             <div style="display: flex; justify-content: center;">
                 <p class="tfCprght">©2021 copyright all rights reserved</p>
             </div>
-            <div style="display: flex; justify-content: center;">
+            <div style="display: flex; justify-content: center; font-size: 200%;">
                 <a href="https://twitter.com/ObasiInek" target="_blank">
                     <i class="fab fa-twitter TopFooterIcons"></i>
                 </a>
