@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inek Obası</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, viewport-fit=cover">
+
+    <script src="https://kit.fontawesome.com/e51de850ab.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="Image/InekObasiFavIconWhite.ico"/>
+</head>
+
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+    .header {
+        text-align: center;
+        background: #dd2118;
+        color: white;
+        font-size: 20px;
+        height: 12vh;
+        width: auto;
+        box-shadow: 0px 10px 5px 10px rgba(0,0,0,0.24);
+    }  
+    .HeaderImage {
+        width: 13.8%;
+        position:relative;
+        bottom: 50px;
+        right: 30%;
+    }
+    @media only screen and (max-width: 1026px) {
+        #textAlign {
+            top: 10px;
+        }
+    }
+    .center{
+        margin: 0 auto;
+    }
+    .vertical-center {
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .btn-group{
+        z-index: 1;
+        position: relative;
+        top: 40%;
+        font-size: 100%;
+        text-align: center;
+    }
+    #GFG{
+        text-decoration: none;
+    }
+    .btn-group .ButtonText{
+        padding: 1vw;
+    }
+    .ButtonText:hover{
+        color: rgb(180, 169, 169);
+    }
+    @media only screen and (max-aspect-ratio: 3/4){
+        .ButtonText{
+            font-size: 3vw;
+        }
+    }
+    .btn-group .buttonHeader {
+        background-color: #dd2118; 
+        border: 2px solid #aa1b13;
+        border-radius: 4px;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    .buttonHeader:hover {
+        background-color: #aa1b13;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .buttonHeader:active {
+        background-color: #aa1b13;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content .Titlecontents{
+        color: white;
+        background-color: #dd2118;
+        border: 1px solid #aa1b13;
+        border-radius: 1px;
+    }
+    .Titlecontents:hover{
+        background-color: #aa1b13;
+    }
+    .Titlecontents:active{
+        background-color: #aa1b13;
+        box-shadow: 0 1px #666;
+        transform: translateY(-1px);
+    }
+
+    @media only screen and (max-aspect-ratio: 3/4){
+        .HeaderImage{
+            display: none;
+        }
+    }
+
+</style>
+
+<body class="body">
+    <div class="HeaderContainer">   
+        <div class="header">
+            <div class="btn-group" id="#textAlign">
+                <div class="dropdown">
+                    <a id="GFG" class="dropbtn ButtonText" style="z-index: 1;">INEK OBASI ≡</a>
+                        <div class="dropdown-content">
+                            <a href="http://InekObasi.tk/" class="Titlecontents">Ana Sayfa</a>
+                            <a  class="Titlecontents" href="http://InekObasi.tk/hakkinda">Hakkımızda</a>
+                            <a class="Titlecontents" href="http://InekObasi.tk/iletisim">Iletişim</a>
+                        </div>
+                </div>
+
+                <a id="GFG" class="ButtonText" href="http://InekObasi.tk/haberler"style="z-index: 1;">HABERLER</a>
+                <a id="GFG" class="ButtonText" href="http://InekObasi.tk/yayinlar"style="z-index: 1;">CANLI YAYIN</a>
+                <a id="GFG" class="ButtonText" href="http://InekObasi.tk/projeler"style="z-index: 1;">PROJELER</a>
+            </div>
+            <a href="http://InekObasi.tk">
+                <img class="HeaderImage" id="fadeshow1" src="Image/InekObasıHeader.png">
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
